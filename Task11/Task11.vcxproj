@@ -156,11 +156,13 @@
   <ItemGroup>
     <ClCompile Include="ChainOfResponsibility.cpp" />
     <ClCompile Include="Decorator.cpp" />
+    <ClCompile Include="ObjectPool.cpp" />
     <ClCompile Include="Task11.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChainOfResponsibility.h" />
     <ClInclude Include="Decorator.h" />
+    <ClInclude Include="ObjectPool.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

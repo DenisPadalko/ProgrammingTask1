@@ -1,8 +1,16 @@
 #include "Decorator.h"
 #include "ChainOfResponsibility.h"
+#include "ObjectPool.h"
 
 int main(int argc, char* argv[])
 {
+    //Object pool patterm
+    srand(time(NULL));
+    Shelf SomeShelf;
+    auto TShirt = SomeShelf.GetTShirt();
+    std::cout << TShirt->GetFirm() << " " << TShirt->GetSize() << std::endl;
+    SomeShelf.Clean(TShirt);
+    
     //Decorator design pattern
     Pizza* SomePizza = new MargheritaPizza();
     std::cout << SomePizza->GetDescription() << " costs $" << SomePizza->GetPrice() << std::endl;
