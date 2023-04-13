@@ -154,10 +154,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ChainOfResponsibility.cpp" />
     <ClCompile Include="Decorator.cpp" />
     <ClCompile Include="Task11.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ChainOfResponsibility.h" />
     <ClInclude Include="Decorator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
