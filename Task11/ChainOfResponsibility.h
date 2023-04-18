@@ -15,7 +15,7 @@ class OneHundredDollars : public Money
 {
 public:
     OneHundredDollars();
-    OneHundredDollars(int InAmountOfBills);
+    explicit OneHundredDollars(int InAmountOfBills);
     void Handle(int i) override;
 private:
     int AmountOfBills;
@@ -25,7 +25,7 @@ class TenDollars : public Money
 {
 public:
     TenDollars();
-    TenDollars(int InAmountOfBills);
+    explicit TenDollars(int InAmountOfBills);
     void Handle(int i) override;
 private:
     int AmountOfBills;
