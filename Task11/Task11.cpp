@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
     Pizza* SomePizza = new MargheritaPizza();
     std::cout << SomePizza->GetDescription() << " costs $" << SomePizza->GetPrice() << std::endl;
 
-    SomePizza = new ExtraCheese(SomePizza);
+    SomePizza = new ExtraCheese(SomePizza, 3);
     std::cout << SomePizza->GetDescription() << " costs $" << SomePizza->GetPrice() << std::endl;
     std::cout << std::endl << std::endl;
 

@@ -35,7 +35,7 @@ class OneDollar : public Money
 {
 public:
     OneDollar();
-    OneDollar(int InAmountOfBills);
+    explicit OneDollar(int InAmountOfBills);
     void Handle(int i) override;
 private:
     int AmountOfBills;
